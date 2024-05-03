@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+    font-size: 19px;
+}
+
+article {
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+    
+}
+
+section {
+  margin-top:25px;
+    width:1200px;
+  background-color:white;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    
+}
+
+.nogrow{
+
+    flex-grow:initial;
+}
+
+.withspace{
+    margin-top:10px;
+   
+}
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#logo img {
+    height: 170px;
+    position: relative;
+    right: 415px;
+    top: 1px;
+}
+
+
+#opzioni img {
+    height: 7vh;
+}
+
+
+#titolo {
+    color: white;
+    font-weight: bold;
+    position: relative;
+    right: 430px;
+    font-size: 38px;
+}
+
+#container_accesso {
+    position: relative;
+    left: 405px;
+}
+
+#accesso {
+    border-radius: 40px;
+    padding: 10px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+}
+#container_barra {
+    position: absolute;
+    right: auto;
+    left: auto;
+}
+.elementi_barra {
+    background-color: white;
+    color: black;
+    margin-right: 30px;
+    border-radius: 15px;
+    padding: 6px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#scegli{
+    display: flex;
+    position: relative;
+width:400px;
+height:50px;
+margin-top:110px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+right:365px;
+
+align-items: center;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+
+}
+
+#scegli img{
+height:50px;
+position: absolute;
+left:5px;
+
+}
+
+#choose{
+    font-size:1.3em;
+    
+    position:absolute;
+    left:60px;
+}
+
+
+#target {
+position: absolute;
+bottom:-202px;
+right:0px;
+display: flex;
+flex-direction: column;
+align-items: start;
+    height:200px;
+    width:155px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+border-bottom-right-radius: 10px;
+border-bottom-left-radius:10px;
+z-index: 2;
+}
+
+#target.hidden {
+    display:none;
+}
+
+#scegli.bord{
+border-bottom-right-radius:10px;
+}
+
+.bodypart{
+
+font-size:1.15em;
+font-weight: 500;
+font-style: italic;
+
+}
+ #scegli input{
+height:30px;
+position:absolute;
+right:5px;
+
+ }
+
+     footer {
+        display: flex;
+        background-color: black;
+        color: white;
+        width: 100%;
+        margin-top: 100px;
+        min-height: 200px;
+        font-size: 1.2em;
+        align-items: center;
+        justify-content: end;
+    }
+    
+    .cellulare {
+        margin-right: 80px;
+    } 
+
+
+    .flex-container-esercizi{
+    
+    flex-grow: 1;
+    display: flex;
+    flex-direction:column;
+
+    }
+
+    .gruppo{
+  margin-top:20px;
+        display: flex;
+        width:1236px;
+       
+        
+    }
+
+    .elemento{
+        position:relative;
+       height:500px;
+        width:295px;
+    border-style: inset;
+        
+    }
+
+    .elemento img{
+        position:absolute;
+        height:280px;
+     
+        top:50px;
+        left:50%;
+        transform: translateX(-50%);
+        
+    }
+    .space{
+        margin-left:18px;
+    }
+
+    .nome{
+        font-weight: bolder;
+ position:absolute;
+ top:5px;
+ max-width: 285px;
+ left: 50%;
+ transform: translateX(-50%);
+ white-space: nowrap;
+ font-style:oblique;
+ overflow: auto;
+font-size: 1.2em;
+    }
+
+    
+
+    .secondari{
+        position:absolute;
+        top:340px;
+        left:50%;
+        white-space: nowrap;
+        max-width: 290px;
+        overflow: auto;
+        transform: translateX(-50%);
+    }

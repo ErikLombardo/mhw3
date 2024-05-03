@@ -1,0 +1,464 @@
+﻿body {
+    margin: 0;
+    font-size: 19px;
+    
+}
+
+article {
+   
+    display: flex;
+    flex-direction: column;
+   
+}
+section {
+    flex-grow:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+header {
+
+    position: fixed;
+    width:100%;
+    z-index: 1;
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 75px;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+
+#logo img {
+height: 170px;
+position:relative;
+right:415px;
+top:1px;
+}
+
+
+#opzioni img {
+    height: 7vh;
+}
+
+
+#titolo{
+
+color:white;
+font-weight: bold;
+position:relative;
+right:430px;
+font-size:38px;
+}
+
+#container_accesso {
+    position:relative;
+    left:395px;
+
+}
+
+#accesso {
+
+    border-radius: 40px;
+    padding: 10px;
+ 
+    font-weight: bold;
+    color: black;
+    background-color: white;
+}
+
+
+#container_barra {
+    
+    position: absolute;
+    right: auto;
+    left: auto;
+}
+
+
+.elementi_barra {
+    background-color: white;
+    color: black;
+    margin-right: 30px;
+    border-radius: 15px;
+    padding: 6px;
+    font-size: 15px;
+    font-weight: 500;
+  
+}
+
+
+
+#intro {
+
+    display: block;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+
+
+
+#opzioni {
+    
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+#opzioni img{
+    height:80px;
+}
+.opzionisingole {
+
+ position:static;
+ font-size:20px;
+ font-weight:500;
+}
+
+#ricerca {
+
+    margin-top:7px;
+    position:relative;
+    border-radius: 40px;
+    display: flex;
+    height: 55px;
+   width:1000px;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+   
+}
+    #ricerca img {
+        
+        position: absolute;
+        height: 25px;
+        left: 25px;
+    }
+
+#dentro_ricerca {
+
+    position:absolute;
+   right: 7px;
+    padding:13px;
+    padding-left:28px;
+    padding-right:28px;
+  border-radius:44px;
+  
+  font-weight:500;
+    background-color: limegreen;
+
+}
+
+
+#inizio {
+    
+    border-radius: 10px;
+    width: 1150px;
+    height: 500px;
+    position: relative;
+    margin-top: 65px;
+    background-image: url('immagini/palestr_main.png');
+    background-size: cover; /* Ridimensiona l'immagine per coprire l'intero contenitore */
+}
+
+#bebetter {
+   
+    position: absolute;
+    color: white;
+    bottom: 25%;
+    left: 2%;
+    font-size: 39px;
+    font-weight: bolder;
+    text-shadow: 0 0 10px darkgreen;
+}
+#bebetter_contenuto {
+    
+    position: absolute;
+    font-size: 0.5em;
+    font-weight: 500;
+}
+#OPLA {
+   text-decoration:underline;
+}
+#bottone {
+    position: absolute;
+    bottom: 7%;
+    left: 2%;
+    background-color: whitesmoke;
+    border-radius: 37px;
+    padding: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bolder;
+    font-size: 1.3em;
+    color: darkgreen;
+
+}
+
+
+.flex-container {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 1150px;
+   
+    
+}
+    .flex-container img {
+        border-radius: 18px;
+        padding: 8px;
+        height: 276px;
+        width: 276px;
+        
+    }
+
+.intestazione {
+    
+    display: block;
+    width: 1150px;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+
+}
+
+
+
+#russi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color:rgb(255,237,211);
+    height: 450px;
+    width: 100%;
+
+}
+
+#spaziointro{
+
+    margin-top:50px;
+}
+
+.spazio{
+
+    margin-top:100px;
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin-top: 100px;
+    min-height: 300px;
+    font-size: 1.2em;
+    align-items: center;
+    justify-content: end;
+    
+}
+.cellulare {
+
+    margin-right:80px;
+}
+
+
+#input_barra{
+    position:absolute;
+    left:70px;
+    font-size: 0.9em;
+    right:110px;
+    flex-grow:1;
+    flex-basis:100%;
+    
+}
+
+
+@media (max-width:500px) {
+
+    body {
+        margin: 0;
+        font-size:19px;
+    }
+
+    header {
+
+        height: 92px;
+        width: 100%;
+    }
+
+
+    #container_barra {
+        display: none;
+    }
+
+
+    #titolo {
+
+        color: white;
+        font-weight: bold;
+      position:static;
+  
+    }
+
+    #logo img {
+
+        position:static;
+        height: 209px;
+        margin-right:-20px;
+        
+    }
+
+    #intro {
+        display: none;
+    }
+
+
+    #opzioni {
+
+        justify-content:normal;
+        overflow:auto;
+        max-width:100vw;
+        margin-left:20px;
+        margin-right:20px;
+    }
+
+    #opzioni img{
+
+        height:80px;
+    }
+
+ 
+
+    #container_accesso {
+        display: none;
+    }
+
+
+
+    
+
+    .opzionisingole {
+       
+        position: static;
+        font-size: 1.3em;
+        white-space: nowrap;
+    }
+
+    #spaziointrocell {
+
+        margin-top: 50px;
+    }
+
+   
+  
+
+    #ricerca {
+      
+       position:relative;
+        border-radius: 9px;
+        display: flex;
+        flex-direction:column;
+        font-size:1.3em;
+        height: 140px;
+        width: 90vw;
+       
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+        #ricerca img {
+            
+            position: absolute;
+            height: 25px;
+            top: 10%;
+            left: 5%;
+        }
+
+    #dentro_ricerca {
+        font-size:0.8em;
+       position:absolute;
+        bottom:10%;
+        left:30px;
+        right:30px;
+        bottom:20px;
+        padding:15px;
+        padding-left:130px;
+        padding-right:130px;
+        border-radius: 44px;
+        font-weight: 500;
+        background-color: limegreen;
+        
+    }
+
+    #input_barra {
+        top: 10%;
+        left: 50px;
+        right: 30px;
+    }
+
+    #inizio {
+
+        background-image: url('immagini/palestr_main.png');
+        background-size: cover; /* Ridimensiona l'immagine per coprire l'intero contenitore */
+        background-position: center left 10%;
+        border-radius: 10px;
+        height: 500px;
+        width:100%;
+        align-items:center;
+        justify-content:center;
+    }
+
+        #inizio img {
+            display: none;
+        }
+
+
+    #bebetter {
+        
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+    #bottone{
+
+        left:20px;
+        bottom:30px;
+
+    }
+
+    .flex-container {
+
+        justify-content:normal;
+        overflow: auto;
+        max-width:100%;
+       margin-left:20px;
+       margin-right:20px;
+    }
+   .intestazione{
+     display:inline;
+     width:initial;
+     margin-left:20px;
+     align-self:start;
+     
+   }
+
+  
+  
+
+    }

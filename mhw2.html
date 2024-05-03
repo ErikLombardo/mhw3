@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Gnomo Muscoloso, allenatori </title>
+    <link rel="stylesheet" href="mhw2.css">
+  <script src="mhw2.js" defer ></script>
+  
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <article>
+        <header>
+
+            <div id="logo">
+                <img src="immagini/logo gnomo.png" />
+            </div>
+
+            <span id="titolo">
+                Muscolandia
+            </span>
+
+
+            <div id="container_barra">
+
+                <a href="mhw1.html" class="elementi_barra">
+                    Home
+                </a>
+                <a href="mhw3.html" class="elementi_barra">
+                    Schede
+                </a>
+                <a href="" class="elementi_barra">
+                    Consigli
+                </a>
+                <a href="" class="elementi_barra">
+                    Altro
+                </a>
+            </div>
+            <div id="container_accesso">
+                <button id="accesso">
+                    Accedi
+                </button>
+            </div>
+
+        </header>
+        <div class="centra">
+
+            <navbar>
+                <img src="immagini/dumbell.png">
+                <input>
+            </navbar>
+            <div id="aggiungi">
+                <input type="image" id="add" src="immagini/aggiungi.png">
+               
+            </div>
+        </div>
+        <div class="modal-view hidden" data-id="creazione">
+            <section class="nogrow">
+
+                <div class="NewAllenatore">
+                    <div class="immaginedacaricare">
+                        inserisci il logo o l'immagine dell'allenatore <input type="file" id="logo_img" accept=".png"> </br > </br> </br> <span id="info">il file deve essere di 200x200, altrimenti sar� ridimensionato.</span>
+                    </div>
+                    <input type="text" placeholder="inserisci il nome dell'allenatore" class="nomeallenatore intestazione">   <button class="contatta"> Contatta </button>
+                    <input type="text" placeholder="inserisci le discipline trattate dell'allenatore" class="disciplineallenatore discipline">
+                    <textarea placeholder="inserisci la descrizione" class="descrizione"> </textarea>
+                 
+                        <div class="tariffe">
+                            <span class="cadenza"> trimestre:       </span><input type="text" placeholder="prezzo" class="tariffa"> </br ></br >
+                            <span class="cadenza">semestre:     </span> <input type="text" placeholder="prezzo" class="tariffa"></br ></br >
+                            <span class="cadenza"> annuale:     </span> <input type="text" placeholder="prezzo" class="tariffa"></br >
+                            
+                        </div>
+                      
+                        <div class="info">
+                            <div>
+                                <span> Email: <input type="text" placeholder="Es. Farlocco@gmail.com" id="email"> </br></span>
+                                <span>Cellulare:<input type="text" placeholder="Es. 3285894756" id="cellulare"></br></span>
+                                <span> Sede: <input type="text" placeholder="Es. Via dei polli 18, Catanzaro, Calabria" id="sede"> </br></span>
+                                <textarea placeholder="altre informazioni utili" class="other_info"></textarea>
+                            </div>
+                        </div>
+                        <div id="submit"><input type="image" id="enter" src="immagini/submit.png"></div>
+                        <div id="delete">  <input type="image" id="remove" src="immagini/x.png"></div>
+                    </div>
+</section>
+            </div>
+                <section >
+
+                    <div class="NewAllenatore withspace" data-id="last">
+                        <img src="immagini/white gnomo.png">
+                        <div class="intestazione"> <span class="nomeallenatore">Gnomo Muscoloso</span>  </div> <button class="contatta"> Contatta </button> <button class="contattacell"> Contatta </button>
+                        <div class="discipline"> <span class="disciplineallenatore">Bodybuilding, Streetlifting, Powerlifting </span></div>
+                        <div class="descrizione">Sono Coltivo e le mucche mi fanno paura </br> </div>
+                        <div class="tariffe">
+                            <span class="cadenza"> trimestre:       </span><span class="tariffa"> 20 mucche  </span></br ></br >
+                            <span class="cadenza">semestre:     </span> <span class="tariffa">  60 cammelli </span></br ></br >
+                            <span class="cadenza"> annuale:     </span>  <span class="tariffa"> 2 unicorni </span></br >
+                        </div>
+                        <div class="info hidden">
+                            <div>
+                                <span> Email: Cipolloto23@istrice.coda </span></br>
+                                <span>Cellulare: 0398712578</span></br >
+                                <span> Sede: Panca piana da gara </span></br>
+                                <div class="other_info">
+                                    mi alleno da 7 anni, tuttavia ho fatto schifo i primi 4.
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <footer>
+                    <div id="info_allenatori">
+                        <span class="allenatore"> BLA BLA BLA </span>
+                        <span class="cellulare">  BLA BLA BLA</span> <br>
+                        <span class="allenatore"> BLA BLA BLA</span>
+                        <span class="cellulare"> BLA BLA BLA</span> <br>
+                    </div>
+                </footer>
+</article>
+</body>
+</html>

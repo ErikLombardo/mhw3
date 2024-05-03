@@ -1,0 +1,590 @@
+body {
+    margin: 0;
+    font-size: 19px;
+}
+
+article {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+}
+
+section {
+  margin-top:25px;
+    width:1200px;
+  background-color:white;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    
+}
+
+.nogrow{
+
+    flex-grow:initial;
+}
+
+.withspace{
+    margin-top:10px;
+   
+}
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#logo img {
+    height: 170px;
+    position: relative;
+    right: 415px;
+    top: 1px;
+}
+
+
+#opzioni img {
+    height: 7vh;
+}
+
+
+#titolo {
+    color: white;
+    font-weight: bold;
+    position: relative;
+    right: 430px;
+    font-size: 38px;
+}
+
+#container_accesso {
+    position: relative;
+    left: 405px;
+}
+
+#accesso {
+    border-radius: 40px;
+    padding: 10px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+}
+
+.contattacell{
+    display:none;
+}
+#container_barra {
+    position: absolute;
+    right: auto;
+    left: auto;
+}
+
+.show{
+    display:initial;
+}
+
+.elementi_barra {
+    background-color: white;
+    color: black;
+    margin-right: 30px;
+    border-radius: 15px;
+    padding: 6px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.noscroll{
+
+    overflow-y:hidden;
+}
+
+
+navbar {
+   margin-top:110px;
+    position:relative;
+    right:300px;
+    border-radius: 30px;
+    display: flex;
+    height: 40px;
+    width: 500px;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+    navbar img {
+        height: 40px;
+      
+    }
+
+    navbar input {
+        width:440px;
+        font-size:0.8em;
+
+    }
+
+
+    #aggiungi {
+     position:relative;
+     
+     top:60px;
+     left:320px;
+    }
+
+       
+        #aggiungi input[type="image"] {
+            height: 100px;
+        }
+
+footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin-top: 100px;
+    min-height: 200px;
+    font-size: 1.2em;
+    align-items: center;
+    justify-content: end;
+}
+
+.cellulare {
+    margin-right: 80px;
+}
+
+.centra{
+    display:flex; 
+   
+    width:100%;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.NewAllenatore{
+    
+    border-style:solid;
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    max-height:350px;
+    min-height:350px;
+   
+    width:100%;
+
+}
+
+.NewAllenatore img{
+    border-style:ridge groove;
+    position:absolute;
+    top:10px;
+    left:10px;
+    width:auto;
+    min-height:200px;
+    min-width:200px;
+    max-width:200px;
+    max-height:200px;
+
+}
+.contatta{
+    position:absolute;
+    right:20px;
+    top:20px;
+
+
+}
+.intestazione {
+    position: absolute;
+   
+    top: 10px;
+    right: 90px;
+    left: 220px;
+    min-height:40px;
+    max-height:40px;
+    
+}
+
+.nomeallenatore {
+   font-size:1.4em;
+   font-weight:bold;
+
+
+}
+
+.discipline{
+    position:absolute;
+    top:50px;
+    right:10px;
+    left:220px;
+    min-height:30px;
+    max-height:30px;
+    
+
+}
+
+.disciplineallenatore{
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+
+}
+.descrizione{
+    
+    position:absolute;
+    top:90px;
+    left:10px;
+    left:220px;
+    right:10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height:250px;
+    max-height:250px;
+
+}
+
+.tariffe{
+  
+    position:absolute;
+    bottom:10px;
+    left:10px;
+    top: 220px;
+    right: 990px;
+
+}
+
+.cadenza{
+    font-style:italic;
+    
+
+}
+
+.tariffa{
+    font-style:italic;
+    font-weight:bolder;
+
+}
+
+.modal-view{
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    background-color:rgba(0,0,0,0.9);
+    z-index:2;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+.hidden{
+    display:none;
+}
+ 
+
+.tariffe input{
+   width:110px;
+    white-space:nowrap;
+}
+
+.immaginedacaricare {
+    border-style: ridge groove;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+   
+    min-height: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+
+.immaginedacaricare img{
+
+    width:100%;
+    height:100%;
+}
+#info{
+    font-family:monospace;
+    font-size:12px;
+    font-weight:bold;
+}
+.immaginedacaricare input[type="file"] {
+
+    width:100%;
+   
+}
+
+#delete input[type="image"] {
+    height: 50px;
+}
+
+#delete {
+    position: absolute;
+    left:-50px;
+    top:-50px;
+}
+
+
+div.info {
+    border-style: solid;
+    background-color: white;
+    position: absolute;
+    height: 170px;
+    width: 280px;
+    right: -305px;
+    margin-top:0px;
+    font-family:Calibri;
+    font-size:0.8em;
+}
+
+div.info div input {
+position: absolute;
+right: 5px;
+    }
+#sede {
+    width:215px;
+}
+
+#cellulare {
+   width:182px;
+
+  
+}
+
+#email{
+   width:207px;
+   
+   
+
+}
+
+div.info div{
+    width:100%;
+    height:100%;
+    position:relative;
+    
+}
+
+.other_info{
+    position:absolute;
+    right:5px;
+    left:5px;
+    bottom:5px;
+   max-height:90px;
+   min-height:90px;
+   min-width:265px;
+   max-width:265px;
+   margin-top:5px;
+}
+
+div.info span {
+   
+   margin-left:5px;
+   margin-right:5px;
+    
+}
+#submit{
+    
+    position:absolute;
+    right:-230px;
+    bottom:-130px;
+}
+
+#submit input[type="image"]{
+    height:280px;
+
+}
+
+@media (max-width:500px) {
+    body {
+        margin: 0;
+        font-size: 19px;
+    }
+
+    article {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: normal;
+    }
+
+    section {
+        margin-top: 25px;
+        width: 1200px;
+        background-color: white;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        max-width: 100vw;
+    }
+
+    #aggiungi {
+        position: static;
+    }
+
+    header {
+        height: 92px;
+        width: 100%;
+    }
+
+
+    #container_barra {
+        display: none;
+    }
+
+
+    #titolo {
+        color: white;
+        font-weight: bold;
+        position: static;
+    }
+
+    .centra {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #aggiungi {
+        display: none;
+    }
+
+    navbar {
+        margin-top: 120px;
+        position: static;
+        border-radius: 30px;
+        display: flex;
+        height: 40px;
+        width: 90vw;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+
+
+        navbar input {
+            width: 83%;
+            font-size: 0.8em;
+        }
+
+    #logo img {
+        position: static;
+        height: 209px;
+        margin-right: -20px;
+    }
+
+
+    #container_accesso {
+        display: none;
+    }
+
+
+
+    .NewAllenatore {
+        width: 95%;
+    }
+
+    .NewAllenatore.withspace img{
+        min-height:140px;
+        max-height:140px;
+        min-width:140px;
+        max-width:140px;
+
+    }
+
+    .descrizione{
+
+        left:10px;
+        right:10px;
+        top:170px;
+        overflow:auto;
+    }
+
+    .tariffe{
+        display:none;
+        position:absolute;
+        left:auto;
+        right:auto;
+        background-color:rebeccapurple;
+    }
+
+    .discipline {
+        top:130px;
+        left: 160px;
+        right:10px;
+        white-space:nowrap;
+        overflow:auto;
+    }
+    .intestazione {
+        left: 160px;
+        right:10px; 
+       
+        min-height: 120px;
+        max-height: 120px;
+        overflow:auto;
+    }
+
+    .contatta{
+        display:none;
+    }
+    .contattacell {
+        position: absolute;
+        display: initial;
+        top: 135px;
+        left: 10px;
+        right: initial;
+    }
+
+    div.info{
+    z-index:1;
+    position:relative;
+    right:initial;
+    }
+
+    div.info img{
+        position:absolute;
+        right:-42px;
+        top:-42px;
+        width:40px;
+        height:40px;
+
+    }
+
+
+
+
+    .modal-view {
+        position: fixed;
+        top:0px;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.9);
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* devo ripeterlo altrimenti la modal view definita su cellulare sembra essere pi� specifica e non subisce hidden*/
+    .hidden{
+       display:none;
+
+    }
+}
+
+
+
+
+
