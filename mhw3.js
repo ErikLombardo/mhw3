@@ -51,6 +51,7 @@ function onJson(json){
 flex_container.innerHTML='';
 const esercizio=json;
 
+
 for (var i=0; i<12; i+=4){
     const div_interno=document.createElement('div');
     div_interno.classList.add('gruppo');
@@ -68,6 +69,26 @@ if(j==1 || j==2 || j==3){
 `;
 muscles.textContent= 'Secondary: ' + esercizio[i + j].secondaryMuscles.join(', ');
 toshow.appendChild(muscles);
+for (let n=0; n<esercizio[i+j].instructions.length; n++){
+    const istruzione=document.createElement('div');
+    istruzione.innerText=n+': '+esercizio[i+j].instructions[n];
+    istruzione.classList.add('istruzione');
+    if(n!=0) 
+        istruzione.classList.add('hidden');
+    istruzione.dataset.id=n;
+    toshow.appendChild(istruzione);
+    }
+
+    const frecciaavanti=document.createElement('img');
+    frecciaavanti.classList.add('avanti');
+    frecciaavanti.addEventListener('click',avanti);
+    frecciaavanti.src='immagini/frecciaavanti.png';
+    toshow.appendChild(frecciaavanti);
+    const frecciaindietro=document.createElement('img');
+    frecciaindietro.classList.add('indietro');
+    frecciaindietro.addEventListener('click',indietro);
+    frecciaindietro.src='immagini/frecciaindietro.png';
+    toshow.appendChild(frecciaindietro);
 div_interno.appendChild(toshowspace);
 div_interno.appendChild(toshow);
 } else  {
@@ -77,6 +98,25 @@ toshow.innerHTML=`
 `;
 muscles.textContent= 'Secondary: ' + esercizio[i + j].secondaryMuscles.join(', ');
 toshow.appendChild(muscles);
+for (let n=0; n<esercizio[i+j].instructions.length; n++){
+    const istruzione=document.createElement('div');
+    istruzione.innerText=n+': '+esercizio[i+j].instructions[n];
+    istruzione.classList.add('istruzione');
+    if(n!=0) 
+        istruzione.classList.add('hidden');
+    istruzione.dataset.id=n;
+    toshow.appendChild(istruzione);
+    }
+    const frecciaavanti=document.createElement('img');
+    frecciaavanti.classList.add('avanti');
+    frecciaavanti.addEventListener('click',avanti);
+    frecciaavanti.src='immagini/frecciaavanti.png';
+    toshow.appendChild(frecciaavanti);
+    const frecciaindietro=document.createElement('img');
+    frecciaindietro.classList.add('indietro');
+    frecciaindietro.addEventListener('click', indietro);
+    frecciaindietro.src='immagini/frecciaindietro.png';
+    toshow.appendChild(frecciaindietro);
 div_interno.appendChild(toshow);
 }
     }
@@ -110,5 +150,26 @@ bordo.classList.remove('bord');
 
 }
 
+function avanti(event){
 
+    //mi riferisco solo all'elemento che ha scatenato l'evento e in particolare all'istruzione che non e' hidden ovvero quella corrente
+    let  current=event.target.closest('.elemento').querySelector('.istruzione:not(.hidden)');
+let next=current.nextElementSibling;
+if (next && next.classList.contains('istruzione')){
+next.classList.remove('hidden');
+current.classList.add('hidden');
+
+}
+}
+
+function indietro(event){
+     //mi riferisco solo all'elemento che ha scatenato l'evento e in particolare all'istruzione che non e' hidden ovvero quella corrente
+     let current=event.target.closest('.elemento').querySelector('.istruzione:not(.hidden)');
+     let previous=current.previousElementSibling;
+     if (previous && previous.classList.contains('istruzione')){
+     previous.classList.remove('hidden');
+     current.classList.add('hidden');
+     
+     }
+     }
 
