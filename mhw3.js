@@ -63,15 +63,17 @@ muscles.classList.add('secondari');
 if(j==1 || j==2 || j==3){
     const toshowspace=document.createElement('div');
     toshowspace.classList.add('space');
+   
         toshow.innerHTML=`
 <img  src=${esercizio[i+j].gifUrl}> 
 <span class='nome' > ${esercizio[i+j].name} </span>
 `;
-muscles.textContent= 'Secondary: ' + esercizio[i + j].secondaryMuscles.join(', ');
+muscles.textContent= 'Secondary muscles: ' + esercizio[i + j].secondaryMuscles.join(', ');
 toshow.appendChild(muscles);
 for (let n=0; n<esercizio[i+j].instructions.length; n++){
     const istruzione=document.createElement('div');
-    istruzione.innerText=n+': '+esercizio[i+j].instructions[n];
+
+    istruzione.innerText=n+': '+ esercizio[i+j].instructions[n];
     istruzione.classList.add('istruzione');
     if(n!=0) 
         istruzione.classList.add('hidden');
@@ -90,13 +92,13 @@ for (let n=0; n<esercizio[i+j].instructions.length; n++){
     frecciaindietro.src='immagini/frecciaindietro.png';
     toshow.appendChild(frecciaindietro);
 div_interno.appendChild(toshowspace);
-div_interno.appendChild(toshow);
+    div_interno.appendChild(toshow);
 } else  {
 toshow.innerHTML=`
 <img  src=${esercizio[i+j].gifUrl}> 
 <span class='nome' > ${esercizio[i+j].name} </span>
 `;
-muscles.textContent= 'Secondary: ' + esercizio[i + j].secondaryMuscles.join(', ');
+muscles.textContent= 'Secondary muscles: ' + esercizio[i + j].secondaryMuscles.join(', ');
 toshow.appendChild(muscles);
 for (let n=0; n<esercizio[i+j].instructions.length; n++){
     const istruzione=document.createElement('div');
@@ -117,12 +119,14 @@ for (let n=0; n<esercizio[i+j].instructions.length; n++){
     frecciaindietro.addEventListener('click', indietro);
     frecciaindietro.src='immagini/frecciaindietro.png';
     toshow.appendChild(frecciaindietro);
-div_interno.appendChild(toshow);
+     
+    div_interno.appendChild(toshow);
 }
     }
     
 flex_container.append(div_interno);
 }
+traduci(flex_container.innerHTML);
 
 }
 
@@ -173,3 +177,45 @@ function indietro(event){
      }
      }
 
+
+     function traduci (documento){
+        
+        const url = 'https://google-translate113.p.rapidapi.com/api/v1/translator/html';
+        const options = {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/x-www-form-urlencoded',
+                'X-RapidAPI-Key': 'b078e96eebmshafbe89161a8b0edp1a528ajsn19634e072585',
+                'X-RapidAPI-Host': 'google-translate113.p.rapidapi.com'
+            },
+            body: new URLSearchParams({
+                from: 'auto',
+                to: 'it',
+                html: documento
+            })
+        };
+        
+        fetch(url, options).then(OnResponse).then(onJson2).catch(error => {
+            console.error(error);
+        });
+           
+     }
+
+     function onJson2(json){
+
+        let documento=document.querySelector('.flex-container-esercizi');
+        documento.innerHTML=json.trans;
+        //una volta tradotto ho perso gli event listener quindi devo ripristinarli.
+        const avantivett=document.querySelectorAll('img.avanti');
+        for (const avantifreccia of avantivett){
+         avantifreccia.addEventListener('click', avanti);
+
+        }
+        const indietrovett=document.querySelectorAll('img.indietro');
+        for (const indietrofreccia of indietrovett){
+            indietrofreccia.addEventListener('click', indietro);
+        }
+
+     }
+
+     //una volta tradotto ho perso gli event listener quindi devo ripristinarli.

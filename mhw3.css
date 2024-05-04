@@ -97,7 +97,7 @@ header {
 #scegli{
     display: flex;
     position: relative;
-width:400px;
+width:350px;
 height:50px;
 margin-top:110px;
 border-top-left-radius: 10px;
@@ -118,7 +118,7 @@ left:5px;
 }
 
 #choose{
-    font-size:1.3em;
+    font-size:1.1em;
     
     position:absolute;
     left:60px;
@@ -139,6 +139,7 @@ border-bottom-right-radius: 10px;
 border-bottom-left-radius:10px;
 z-index: 1;
 background-color: white;
+font-size: 1em;
 }
 
 #target.hidden {
@@ -200,7 +201,7 @@ right:5px;
 
     .elemento{
         position:relative;
-       height:500px;
+       height:540px;
         width:295px;
     border-style: inset;
         
@@ -209,10 +210,10 @@ right:5px;
     .elemento img{
         position:absolute;
         height:280px;
-     
-        top:50px;
+        top:85px;
         left:50%;
         transform: translateX(-50%);
+       
         
     }
     .space{
@@ -225,7 +226,7 @@ right:5px;
  position:absolute;
  top:5px;
  max-width: 285px;
- height: 70px;
+ height: 80px;
  left: 5px;
  right:5px;
  font-style:oblique;
@@ -239,7 +240,7 @@ width:285px;
 
     .secondari{
         position:absolute;
-        top:340px;
+        top: 370px;
         left:50%;
         white-space: nowrap;
         max-width: 290px;
@@ -252,7 +253,7 @@ width:285px;
         left:5px;
         right:5px;
         bottom:45px;
-        top:375px;
+        top:400px;
     }
 
     .istruzione.hidden{
@@ -264,7 +265,7 @@ width:285px;
      width: 25px;
      height: 30px;
      position:absolute;
-     top:460px;
+     top:490px;
      left:275px;
     
 }
@@ -273,7 +274,7 @@ width:285px;
     width: 25px;
     height: 30px;
     position:absolute;
-    top:460px;
+    top:490px;
     left:250px;
    
 }
